@@ -4,19 +4,21 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int main(int argc, const char* argv[]){
-  const int SecPerMinPerDeg = 60;
+void func1();
+void func2();
 
-  double degrees,minutes,seconds;
-  cout<<"Enter a latitude in degrees, minutes, and seconds:\n";
-  cout<<"First, enter the degrees: ";
-  cin>>degrees;
-  cout<<"Second, enter the minutes of arc: ";
-  cin>>minutes;
-  cout<<"Finally, enter the seconds of arc: ";
-  cin>>seconds;
-  cout<<degrees<<" degrees, "<<minutes<<" minutes, "<<seconds<<" seconds = "
-  <<degrees+minutes/double(SecPerMinPerDeg)+seconds/static_cast<double>(SecPerMinPerDeg*SecPerMinPerDeg)
-  <<" degrees\n";
+int main(int argc, const char* argv[]){
+  func1();
+  func1();
+  func2();
+  func2();
   return 0;
+}
+
+void func1(void){
+  cout<<"Three blind mice"<<endl;
+}
+
+void func2(void){
+  cout<<"See how they run"<<endl;
 }

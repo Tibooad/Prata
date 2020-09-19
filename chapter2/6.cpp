@@ -4,12 +4,15 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+double getAstrUnits(double lightYears);
+
 int main(int argc, const char* argv[]){
-  double kilometers,liters;
-  cout<<"Enter count kilometers: ";
-  cin>>kilometers;
-  cout<<"Enter count liters: ";
-  cin>>liters;
-  cout<<"Count liters per 100 kilometers "<< (liters/kilometers)*100.0<<endl;
+  cout<<"Enter the number of light years: ";
+  double lightYears;
+  cin>>lightYears;
+  cout<<lightYears<<" lighrt years = "<<getAstrUnits(lightYears)<<" astronomical units.";
   return 0;
+}
+double getAstrUnits(double lightYears){
+  return lightYears*63240.0;
 }
