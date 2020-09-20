@@ -21,5 +21,6 @@ int main(int argc, const char* argv[]){
 
   cout<<"Name: "<<pbird->nameCompany<<" diameter: "<<pbird->diameter
   <<" weight: "<<pbird->weight<<endl;
+  delete pbird;
   return 0;
 }

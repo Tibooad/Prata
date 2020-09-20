@@ -25,5 +25,6 @@ int main(int argc,const char* argv[]){
   <<cb[1].calories<<endl
   <<"name: "<<cb[2].name<<" weight: "<<cb[2].weight<<" calories: "
   <<cb[2].calories<<endl;
+  delete [] cb;
   return 0;
 }
