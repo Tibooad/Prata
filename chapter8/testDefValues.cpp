@@ -2,12 +2,12 @@
 void print(int i,int width){
 
 }
-void print(long i,int width){
+/*void print(long i,int width){
     
-}
-void print(double i,int width){
+}*/
+/*void print(double i,int width){
     
-}
+}*/
 // char* left(const char* str, int n=1);
 char* left(const char* str, int n=1){
     if(n<0)
